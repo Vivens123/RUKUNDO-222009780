@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Tickets - Event Ticketing System</title>
+    <!-- Add your CSS link here -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- Navigation Bar -->
+<nav>
+    <ul>
+       <li><a href="Home.html" style="color: black; text-decoration: none; padding: 10px; margin-right: 10px;">Home</a></li>
+<li><a href="Event.html" style="color: black; text-decoration: none; padding: 10px; margin-right: 10px;">Event</a></li>
+<li><a href="contact.html" style="color: black; text-decoration: none; padding: 10px; margin-right: 10px;">Contact</a></li>
+       
+        <!-- Add more navigation links as needed -->
+    </ul>
+</nav>
+
+<!-- Main Content Section -->
+<main>
+    <section id="book">
+        <h1>Book Tickets</h1>
+        <p>Fill out the form below to book tickets for your desired event:</p>
+        <form action="book.php" method="POST">
+            <ul><label for="event">Select Event:</label></ul>
+            <select id="event" name="event">
+                <!-- Populate this dropdown menu dynamically with events from your database -->
+                <option value="event1">Event 1</option>
+                <option value="event2">Event 2</option>
+                <!-- Add more options as needed -->
+            </select>
+<ul><label for="quantity">Quantity:</label>
+<input type="number" id="quantity" name="quantity" min="1" required></ul>
+<ul><label for="name">Your Name:</label>
+<input type="text" id="name" name="name" required></ul>
+<ul><label for="email">Your Email:</label>
+<input type="email" id="email" name="email" required></ul>
+
+            <!-- Add more input fields for additional information as needed -->
+
+            <input type="submit" value="Book Now">
+        </form>
+    </section>
+</main>
+
+<!-- Footer Section -->
+<footer>
+    <p>&copy;<b> Your Ticket is Received Well</b>.</p>
+</footer>
+
+</body>
+</html>
